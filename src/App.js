@@ -5,12 +5,16 @@ import Navbar from "./pages/Navbar";
 import Profile from "./pages/Profile";
 
 function App() {
+  const func = () => {
+    console.log("start");
+  };
+
   return (
-    <div className='App'>
+    <div className="App">
       <Navbar />
       <Routes>
-        <Route path='/' element={<Login />} />
-        <Route path='/profile' element={<Profile />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </div>
   );
